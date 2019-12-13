@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/polymer/0.4.2/polymer.js'></script>
+<style>
+music-staff, music-note {
+    background: -webkit-linear-gradient(top, black 0%, white 0.1667rem) 0 0;
+    background: linear-gradient(top, black 0%, white 0.1667rem) 0 0;
+    -webkit-background-size: 100% 1rem;
+    background-size: 100% 1rem;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>piano game</title>
+</head>
+<body>
+    <music-score>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble">
+                    <music-clef></music-clef>
+                    <!-- <music-note value="1/8" pitch="G6" direction="up"></music-note>
+                    <music-note value="1/8" pitch="F9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="E9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="D9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="C9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="B9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="A9" direction="down"></music-note>
+                    <music-note value="1/8" pitch="G8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="F8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="E8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="D8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="C8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="B8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="A8" direction="down"></music-note>
+                    <music-note value="1/8" pitch="G7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="F7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="E7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="D7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="C7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="B7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="A7" direction="down"></music-note>
+                    <music-note value="1/8" pitch="G6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="F6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="E6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="D6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="C6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="B6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="A6" direction="down"></music-note>
+                    <music-note value="1/8" pitch="G5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="F5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="E5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="D5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="C5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="B5" direction="down"></music-note>
+                    <music-note value="1/8" pitch="A5" direction="up"></music-note>
+                    <music-note value="1/8" pitch="G4" direction="up" accidental="doublesharp"></music-note>
+                    <music-note value="1/8" pitch="F4" direction="up" accidental="sharp"></music-note>
+                    <music-note value="1/8" pitch="E4" direction="up" accidental="natural"></music-note>
+                    <music-note value="1/8" pitch="D4" direction="up" accidental="flat"></music-note>
+                    <music-note value="1/8" pitch="C4" direction="up" accidental="doubleflat"></music-note>
+                    <music-note value="1/8" pitch="B4" direction="up"></music-note>
+                    <music-note value="1/8" pitch="A4" direction="up"></music-note> -->
+                    <music-note value="1/4" pitch="C4" direction="up"></music-note>
+                </music-staff>
+                <music-staff clef="bass">
+                    <music-clef></music-clef>
+                    <!-- <music-note value="1/8" pitch="G8" direction="up"></music-note> -->
+                </music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble">
+                    <!-- <music-note value="1/8" pitch="G6" direction="up"></music-note> -->
+                </music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+        <music-measure>
+            <music-staffgroup>
+                <music-staff clef="treble"></music-staff>
+                <music-staff clef="bass"></music-staff>
+            </music-staffgroup>
+        </music-measure>
+    </music-score>
+    
+    <polymer-element name="music-note" attributes="accidental value pitch direction">
+        <template>
+            <div id="note"><span id="accidental">{{prepend}}</span>{{symbol}}</div>
+        </template>
+        <script>
+            (function() {
+                var symbols = {
+                    "notes": {
+                        "1/8": {
+                            "up": '\uE1D7',
+                            "down": '\uE1D8'
+                        },
+                        "1/4": {
+                            "up": '\uE1D5',
+                            "down": '\uE1D6'
+                        },
+                    },
+                    "accidentals": {
+                        "doublesharp": '\uE263',
+                        "sharp": '\uE262',
+                        "natural": '\uE261',
+                        "flat": '\uE260',
+                        "doubleflat": '\uE264',
+                    },
+                    space: {
+                        "half": '\u2009'
+                    }
+                };
+                
+                Polymer({
+                    value: '1/8',
+                    direction: 'up',
+                    prepend: '',
+                    append: '',
+                    ready: function() {
+                        switch (this.direction) {
+                            case 'up':
+                            case 'down':
+                                this.symbol = symbols.notes[this.value][this.direction];
+                                this.$.note.classList.add(this.direction);
+                            break;
+                        }
+            
+                        switch (this.accidental) {
+                            case 'doublesharp':
+                            case 'sharp':
+                            case 'natural':
+                            case 'doubleflat':
+                            case 'flat':
+                                this.prepend = symbols.accidentals[this.accidental];
+                            break;
+                        }
+                    }
+                });
+            })();
+        </script>
+    </polymer-element>
+</body>
+</html>
